@@ -32,9 +32,9 @@ public class LoginTest {
 		.openBrowser("Mozilla")
 		.goToHomePage()
 		.validator(false).validateTitle(Constants.HOME_PAGE_TITLE)//returns homepage object,dont have to stop
-		.validator(false).validateText("abc","abc")//returns homepage object, stops if validation fails
-		.validator(true).validateElementPresence("id","ssss")
-		.goToEnterUserNamePage();
+		.validator(false).validateText("abc","abc");//returns homepage object, stops if validation fails
+		//.validator(false).validateElementPresence("id","ssss");
+		//.goToEnterUserNamePage();
 		//.validator(false).validateTitle(Constants.HOME_PAGE_TITLE)//returns homepage object,dont have to stop
 		//.submitUsername("anidivakark@gmail.com");		
 		

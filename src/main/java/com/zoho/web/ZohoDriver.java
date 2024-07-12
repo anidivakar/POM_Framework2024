@@ -22,8 +22,8 @@ public class ZohoDriver extends ZohoValidationDriver{
 
 	@Override
 	public void openBrowser(String bName) {
-		
-		System.setProperty("webdriver.gecko.driver", "D:\\Selenium 4.10.0\\Selenium 4.0.0\\Gecko\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "D:\\Selenium 4.10.0\\Selenium 4.0.0\\Gecko\\geckodriver.exe");
 		driver = new EventFiringWebDriver(new FirefoxDriver());
 
 		driver.register(new ZohoEventListener());
